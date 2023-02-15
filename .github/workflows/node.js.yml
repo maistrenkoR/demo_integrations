@@ -21,4 +21,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: yarn install
+  tests:
+    runs-on: ubuntu-latest
+
+    steps:
     - run: yarn cypress run
