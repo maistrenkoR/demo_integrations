@@ -22,3 +22,4 @@ jobs:
         cache: 'npm'
     - run: yarn install
     - run: yarn cypress run
+    - run: npx nyc report --reporter=text-summary
